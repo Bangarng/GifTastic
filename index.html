@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> GifTastic </title>
+    <!--===============================GOOGLE FONTS=============================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <!--===============================BOOTSTRAP CDN COMPILED AND MINIFIED CSS==================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--===============================CSS Reset and HW4.css==================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/hw6reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hw6.css">
+    <!--===============================JQUERY.MIN CDN===========================================================-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--=================================particles.js CDN==================================================-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.js"></script>
+    <script src="assets/javascript/particles.js"></script>
+
+<body>
+    <!--======================PARTICLE.JS============================-->
+    <div id="particles-js" width="100%" height="100%">
+            <canvas class="particles-js-canvas-el" width="1583" height="497" style="width: 100%; height: 100%;"></canvas></div>
+    <header class="container">
+        <div class="header">
+            <h1>Welcome to Giftastic! </br> Your #1 Procrastination Station!</h1>
+        </div>
+    </header>
+    <!--======================PARTICLE.JS END============================-->
+    <main class="container">
+    <section class="gif-content">
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div id="buttons-view"></div>
+        <br/>
+        <form id="gif-form">
+            <label for="gif-input">Enter something fun in the box below, then click 'Add a GIF' or click on one of the buttons above. Then click on the images below to play the GIF.</label>
+            <input type="text" id="gif-input">
+            <!-- Button triggers new movie to be added -->
+            <input id="add-gif" class="btn" type="submit" value="Add a GIF">
+        </form>
+    </section>
+    <section>
+        <div id="gifs-appear-here"></div>
+    </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/hw6script.js"></script>
+
+</html>

@@ -1,0 +1,129 @@
+/*Importing Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Jua');
+
+body {
+    background: linear-gradient(45deg, navy, #00004d, #000033, #00004d, #2b1de8) no-repeat center center fixed;; 
+}
+
+/*Banner*/
+.header {
+    color: #fff;
+    font-family: 'Jua', sans-serif;
+    font-size: 3em;
+    max-width: 100%;
+    padding: 1em 1em;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 2px skyblue;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.gif-content {
+    display: block;
+    margin: auto;
+}
+
+.gif {
+    display:inline-block;
+    color:white;
+    font-family: 'Jua', sans-serif;
+    padding: 0 10px 10px 10px;
+}
+
+.gif p {
+    margin-bottom:10px;
+}
+
+.gif img {
+    border: 2px solid skyblue;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.gif img:hover {
+    animation: shake 0.1s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#gifs-appear-here {
+    text-align: center;
+    margin-bottom:5%;
+}
+
+#buttons-view {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.gifButtons, #add-gif {
+    font-family: 'Jua', sans-serif;
+    padding: 5px;
+    margin: 8px;
+    border: 3px solid #25a7da;
+    border-radius: 5px;
+    background-color: skyblue;
+    color:#333;
+    transition: all .2s ease-in-out;
+}
+
+.gifButtons:hover, #add-gif:hover {
+    transform: scale(1.08);
+}
+
+#add-gif {
+    background-color: lightgreen;
+    border: 3px solid #25a7da;
+    border-radius:skyblue;
+}
+
+.twirl {
+    -webkit-animation:spin .5s linear;
+    -moz-animation:spin .5s linear;
+    animation:spin .5s linear;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+label {
+    color:white;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3em;
+    padding-bottom:8px;
+}
+
+#gif-form {
+    line-height:25px;
+}
+
+/*Background Stuff*/
+
+/*THIS IS FOR THE LINEAR BACKGROUND*/
+html {
+    height: 100%
+}
+
+.wrapper {
+    margin: 0 auto -155px
+}
+
+canvas {
+    display:block;
+    position: fixed;
+    z-index: -10;
+}
